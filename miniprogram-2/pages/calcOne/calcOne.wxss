@@ -1,0 +1,50 @@
+.text_0{
+  text-align: center;
+  font-size: x-large;
+  color: black;
+}
+.text_1{
+  margin-top: 15px;
+  margin-left: 15px;
+  color: black;
+}
+.text_2{
+  margin-top: 15px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  color: rgb(199, 8, 8);
+}
+.input{
+  margin-top: 5px;
+  margin-left: 40px;
+  font-style: italic;
+}
+.button_0{
+  margin-top: 15px;
+}
+.img{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  width: 725rpx;
+  height: 400rpx;
+}
+.img_other{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  width: 725rpx;
+  height: 300rpx;
+}
+.name{
+  padding-top: 15px;
+  text-align: center;
+  font-weight: 10;
+  font-size: 10px;
+  font-style: italic;
+  color:rgb(85, 84, 84);
+}

@@ -1,0 +1,17 @@
+<view class = "text_0">新零件添加</view>
+
+<view class = "text_1">选择新零件种类</view>
+
+<picker class = "pickers" bindchange = "pickerChangeFrock" value = "{{index_part}}" range = "{{array_part}}">
+  <view class = "picker">当前新零件种类：{{array_part[index_part]}}</view>
+</picker>
+ 
+<view class = "text_1">新零件型号</view>
+
+<input class = "input" maxlength = "20" bindinput = "partModel" placeholder = "请输入新零件型号" value = "{{input_content}}"/>
+
+<button class = "button_0" type = "primary" bindtap = "addFrock" style = "width: 700rpx;line-height: 50rpx;">提交</button>
+
+<button class = "button_1" bindtap = "goback" style = "width: 700rpx;line-height: 50rpx;">返回</button>
+
+<view class ="name">@nzc</view>

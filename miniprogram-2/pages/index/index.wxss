@@ -1,0 +1,33 @@
+.text_0{
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: large;
+  color:black;
+}
+.u-wrp-bnr {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 700rpx;
+  height: 350rpx;
+  display: block;
+  position: relative;
+  background: #f0f0f0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.u-img-slide {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 780rpx;
+  height: inherit;
+}
+.name{
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 10;
+    font-size: 10px;
+    font-style: italic;
+    color:rgb(85, 84, 84);
+}

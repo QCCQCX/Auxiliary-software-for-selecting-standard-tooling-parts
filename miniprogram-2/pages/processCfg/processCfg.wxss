@@ -1,0 +1,81 @@
+.text_0{
+    text-align: center;
+    font-size: x-large;
+    color: black;
+}
+.text_1{
+    margin-top: 10px;
+    margin-left: 5px;
+    color: black;
+}
+.text_2{
+    margin-top: 30px;
+    margin-left: 5px;
+    color: black;
+}
+.pickers{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-style: italic;
+    color: rgb(123, 123, 123);
+}
+.pickers_part{
+  position: absolute; 
+  left: 0px; 
+  margin-top: 5px;
+  margin-left: 10px;
+  font-style: italic;
+  color: rgb(123, 123, 123);
+}
+.pickers_model{
+    margin-top: 5px;
+    margin-right: 30px;
+    font-style: italic;
+    color: rgb(123, 123, 123);
+}
+.view_0{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    width: 725rpx;
+    height: 400rpx;
+}
+.img_model{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  width: 725rpx;
+  height: 250rpx;
+}
+.reset{
+    margin-top: 50px;
+}
+.name{
+    padding-top: 5px;
+    text-align: center;
+    font-weight: 10;
+    font-size: 10px;
+    font-style: italic;
+    color:rgb(85, 84, 84);
+}
+.button_0{
+    position: absolute; 
+    right: 15px; 
+}
+.hr {
+  width: 90%;
+  height: 2rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  margin-left: 37.5rpx;
+  background-color: #55453780;
+}

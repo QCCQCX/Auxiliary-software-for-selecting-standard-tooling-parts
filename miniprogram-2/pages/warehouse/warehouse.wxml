@@ -1,0 +1,30 @@
+<view class = "text_0">工装库</view>
+
+<view class = "text_1">选择库以操作零件清单</view>
+
+<picker class = "pickers" bindchange = "pickerChangeFrock" value = "{{index_frock}}" range = "{{array_frock}}">
+  <view class = "picker">当前工装种类：{{array_frock[index_frock]}}</view>
+</picker>
+ 
+<button class = "button_0" type = "primary" bindtap = "addFrock" style = "width: 700rpx;line-height: 50rpx;">添加新零件</button>
+
+<button class = "button_0" bindtap = "selectFrock" style = "width: 700rpx;line-height: 50rpx;">更新零件表</button>
+
+<view class = "text_2">{{array_frock[index_frock]}}工装库明细表</view>
+
+ <view class = "table">
+  <block wx:for = "{{frockList}}" wx:key = 'index'>
+    <view class = "background_0" wx:if = "{{index % 2 == 0}}">
+      <view class = "text_4">{{item.part}}</view>
+      <view class = "text_4">{{item.model}}</view>
+      <view class = "text_5" bindtap = "deleteFrock" data-part = "{{item.part}}" data-model = "{{item.model}}">删除</view>
+    </view>
+    <view class = "background_1" wx:else>
+      <view class = "text_4">{{item.part}}</view>
+      <view class = "text_4">{{item.model}}</view>
+      <view class = "text_5" bindtap = "deleteFrock" data-part = "{{item.part}}" data-model = "{{item.model}}">删除</view>
+    </view>
+  </block>
+</view>
+
+<view class ="name">@nzc</view>

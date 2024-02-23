@@ -1,0 +1,45 @@
+<view class="text_0">配置</view>
+
+<view class = "text_1">选择以配置工序零件</view>
+
+<button class = "button_0" bindtap = "toProcessCfg" data-index_process = "1" style = "width: 600rpx;line-height: 50rpx;">工序一</button>
+
+<button class = "button_0" bindtap = "toProcessCfg" data-index_process = "2" style = "width: 600rpx;line-height: 50rpx;">工序二</button>
+
+<button class = "button_0" bindtap = "toProcessCfg" data-index_process = "3" style = "width: 600rpx;line-height: 50rpx;">工序八</button>
+
+<button class = "button_0" bindtap = "toProcessCfg" data-index_process = "4" style = "width: 600rpx;line-height: 50rpx;">工序十</button>
+
+<view class = "text_1">选择工序以计算误差</view>
+
+<picker class = "pickers" bindchange = "pickerChangeProcess" value = "{{index_process}}" range = "{{array_process}}">
+  <view class = "picker">当前选择工序：{{array_process[index_process]}}</view>
+</picker>
+
+<view class = "text_2">选择方案以计算误差</view>
+
+<picker class = "pickers" bindchange = "pickerChangePlan" value = "{{index_plan}}" range = "{{array_plan}}">
+  <view class = "picker">当前选择方案：{{array_plan[index_plan]}}</view>
+</picker>
+
+<view class = "text_2">选择面以计算误差</view>
+
+<picker class = "pickers" bindchange = "pickerChangeFace" value = "{{index_face}}" range = "{{array_face}}">
+  <view class = "picker">当前选择面：{{array_face[index_face]}}</view>
+</picker>
+
+<button class = "button_0" bindtap = "calcBegin" style = "width: 600rpx;line-height: 50rpx;">进入计算</button>
+
+<view class = "text_1">选择以查看配置情况</view>
+
+<button class = "button_0" bindtap = "toProcessView" data-index_process = "1" style = "width: 600rpx;line-height: 50rpx;">工序一</button>
+
+<button class = "button_0" bindtap = "toProcessView" data-index_process = "2" style = "width: 600rpx;line-height: 50rpx;">工序二</button>
+
+<button class = "button_0" bindtap = "toProcessView" data-index_process = "3" style = "width: 600rpx;line-height: 50rpx;">工序八</button>
+
+<button class = "button_0" bindtap = "toProcessView" data-index_process = "4" style = "width: 600rpx;line-height: 50rpx;">工序十</button>
+
+<button class = "button_1" type="primary" bindtap = "submitProcess" style = "width: 700rpx;line-height: 50rpx;">完成配置</button>
+
+<view class ="name">@nzc</view>

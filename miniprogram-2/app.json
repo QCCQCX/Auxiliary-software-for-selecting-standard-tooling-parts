@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/process/process",
+    "pages/warehouse/warehouse",
+    "pages/logs/logs",
+    "pages/processCfg/processCfg",
+    "pages/processView/processView",
+    "pages/add/add",
+    "pages/history/history",
+    "pages/calcOne/calcOne",
+    "pages/calcTwo/calcTwo",
+    "pages/calcThree/calcThree"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#7a7a7a",
+    "selectedColor": "#007aff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/pic/home.png",
+        "selectedIconPath": "pages/pic/homing.png",
+        "text": "开始页"
+      }, 
+      {
+        "pagePath": "pages/process/process",
+        "iconPath": "pages/pic/process.png",
+        "selectedIconPath": "pages/pic/processing.png", 
+        "text": "配 置"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "iconPath": "pages/pic/history.png",
+        "selectedIconPath": "pages/pic/historying.png", 
+        "text": "记 录"
+      },
+      {
+        "pagePath": "pages/warehouse/warehouse",
+        "iconPath": "pages/pic/warehouse.png",
+        "selectedIconPath": "pages/pic/warehousing.png", 
+        "text": "工装库"
+      }
+    ]
+ }
+}

@@ -1,0 +1,97 @@
+<view class = "text_0">{{process}}配置</view>
+
+<view class = "text_1">选择方案以配置工序</view>
+
+<picker class = "pickers" bindchange = "pickerChangePlan" value = "{{index_plan}}" range = "{{array_plan}}">
+    <view class = "picker">当前选择方案：{{array_plan[index_plan]}}</view>
+</picker>
+
+<image class = "img" src = "{{img_path_plan}}"></image>
+
+<view class = "text_1">选择面以添加零件</view>
+
+<picker class = "pickers" bindchange = "pickerChangeFace" value = "{{index_face}}" range = "{{array_face}}">
+    <view class = "picker">当前选择面：{{array_face[index_face]}}面</view>
+</picker>
+
+<image class = "img" src = "{{img_path_process}}"></image>
+
+<view class = "text_2">夹具零件（定位）及型号：</view>
+
+<view class = "view_0">
+    <picker class = "pickers_part" bindchange = "pickerChangePart_1" value = "{{index_part_1}}" range = "{{array_part_1}}">
+        <view class = "picker">{{array_part_1[index_part_1]}}</view>
+    </picker>
+
+    <picker class = "pickers_model" bindchange = "pickerChangeModel_1" value = "{{index_model_1}}" range = "{{array_model_1}}">
+        <view class = "picker">{{array_model_1[index_model_1]}}</view>
+    </picker>
+
+    <button class = "button_0" style = "width: 200rpx;line-height: 30rpx;" bindtap = "addFrock" data-frock = "1">添加</button>
+</view>
+
+<image class = "img" src = "{{img_path_part_1}}"></image>
+
+<view class="hr"></view>
+
+<image class = "img_model" src = "{{img_path_model_1}}"></image>
+
+<view class = "text_2">夹具零件（夹紧）及型号：</view>
+
+<view class = "view_0">
+    <picker class = "pickers_part" bindchange = "pickerChangePart_2" value = "{{index_part_2}}" range = "{{array_part_2}}">
+        <view class = "picker">{{array_part_2[index_part_2]}}</view>
+    </picker>
+
+    <picker class = "pickers_model" bindchange = "pickerChangeModel_2" value = "{{index_model_2}}" range = "{{array_model_2}}">
+        <view class = "picker">{{array_model_2[index_model_2]}}</view>
+    </picker>
+
+    <button class = "button_0" style = "width: 200rpx;line-height: 40rpx;" bindtap = "addFrock" data-frock = "2">添加</button>
+</view>
+
+<image class = "img" src = "{{img_path_part_2}}"></image>
+
+<view class="hr"></view>
+
+<image class = "img_model" src = "{{img_path_model_2}}"></image>
+
+<view class = "text_2">刀具及型号：</view>
+
+<view class = "view_0">
+    <picker class = "pickers_part" bindchange = "pickerChangePart_3" value = "{{index_part_3}}" range = "{{array_part_3}}">
+        <view class = "picker">{{array_part_3[index_part_3]}}</view>
+    </picker>
+
+    <picker class = "pickers_model" bindchange = "pickerChangeModel_3" value = "{{index_model_3}}" range = "{{array_model_3}}">
+        <view class = "picker">{{array_model_3[index_model_3]}}</view>
+    </picker>
+
+    <button class = "button_0" style = "width: 200rpx;line-height: 40rpx;" bindtap = "addFrock" data-frock = "3">添加</button>
+</view>
+
+<image class = "img" src = "{{img_path_part_3}}"></image>
+
+<view class="hr"></view>
+
+<image class = "img_model" src = "{{img_path_model_3}}"></image>
+
+<view class = "text_2">量具：</view>
+
+<view class = "view_0">
+  <picker class = "pickers_part" bindchange = "pickerChangePart_4" value = "{{index_part_4}}" range = "{{array_part_4}}">
+        <view class = "picker">{{array_part_4[index_part_4]}}</view>
+    </picker>
+
+    <picker class = "pickers_model" bindchange = "pickerChangeModel_4" value = "{{index_model_4}}" range = "{{array_model_4}}">
+        <view class = "picker">{{array_model_4[index_model_4]}}</view>
+    </picker>
+
+    <button class = "button_0" style = "width: 200rpx;line-height: 40rpx;" bindtap = "addFrock" data-frock = "4">添加</button>
+</view>
+
+<image class = "img_model" src = "{{img_path_model_4}}"></image>
+
+<button class = "reset" type = "warn" style= "width: 725rpx;line-height: 50rpx;" bindtap = "resetProcess">重置当前工序</button>
+
+<view class ="name">@nzc</view>

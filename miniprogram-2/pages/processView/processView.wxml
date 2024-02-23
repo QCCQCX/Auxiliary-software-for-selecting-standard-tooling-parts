@@ -1,0 +1,50 @@
+<view class = "text_0">{{process}}配置详情</view>
+
+<view class = "text_1">选择方案以查询配置详情</view>
+
+<picker class = "pickers" bindchange = "pickerChangePlan" value = "{{index_plan}}" range = "{{array_plan}}">
+  <view class = "picker">当前方案：{{array_plan[index_plan]}}</view>
+</picker>
+ 
+<image class = "img" src = "{{img_path_plan}}"></image>
+
+<view class = "text_1">选择面以查询配置详情</view>
+
+<picker class = "pickers" bindchange = "pickerChangeFace" value = "{{index_face}}" range = "{{array_face}}">
+  <view class = "picker">当前面：{{array_face[index_face]}}</view>
+</picker>
+
+<image class = "img" src = "{{img_path_process}}"></image>
+
+<button class = "button_0" bindtap = "selectProcess" style = "width: 700rpx;line-height: 50rpx;">查询配置详情</button>
+
+<view class = "text_2">{{process}}配置详情表</view>
+
+ <view class = "table">
+  <block wx:for = "{{processList}}" wx:key = 'index'>
+    <view class = "background_0" wx:if = "{{index % 2 == 0}}">
+      <view class = "text_4">{{item.frock}}</view>
+      <view class = "text_4">{{item.part}}</view>
+      <view class = "text_4">{{item.model}}</view>
+    </view>
+    <view class = "background_1" wx:else>
+      <view class = "text_4">{{item.frock}}</view>
+      <view class = "text_4">{{item.part}}</view>
+      <view class = "text_4">{{item.model}}</view>
+    </view>
+  </block>
+</view>
+
+<view class = "text_1">选择面以查询误差值</view>
+
+<picker class = "pickers" bindchange = "pickerChangeFaceE" value = "{{index_faceE}}" range = "{{array_faceE}}">
+  <view class = "picker">当前面：{{array_faceE[index_faceE]}}</view>
+</picker>
+
+<button class = "button_0" bindtap = "selectCalc" style = "width: 700rpx;line-height: 50rpx;">查询误差值</button>
+
+<view class = "text_1">定位误差：{{error_location}}</view>
+
+<view class = "text_1">1/3工序误差：{{error_process}}</view>
+
+<view class ="name">@nzc</view>

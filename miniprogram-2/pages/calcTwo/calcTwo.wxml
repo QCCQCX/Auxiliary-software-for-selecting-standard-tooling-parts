@@ -1,0 +1,29 @@
+<view class = "text_0">误差计算</view>
+
+<image class = "img" src = "{{img_path_plan}}"></image>
+
+<image class = "img_other" src = "{{img_path}}"></image>
+
+<view class = "text_1">输入基准位移误差：</view>
+
+<input class = "input" maxlength = "20" bindinput = "errInput1" placeholder = "请输入双精度浮点型数据" value = "{{input_err_1}}"/>
+
+<view class = "text_1">输入基准不重合误差：</view>
+
+<input class = "input" maxlength = "20" bindinput = "errInput2" placeholder = "请输入双精度浮点型数据" value = "{{input_err_2}}"/>
+
+<button class = "button_0" bindtap = "calcLoc" style = "width: 700rpx;line-height: 50rpx;">计算定位误差</button>
+
+<view class = "text_2">定位误差：{{error_location}}</view>
+
+<view class = "text_1">输入工序误差：</view>
+
+<input class = "input" maxlength = "20" bindinput = "errInput3" placeholder = "请输入双精度浮点型数据" value = "{{input_err_3}}"/>
+
+<button class = "button_0" bindtap = "calcPro" style = "width: 700rpx;line-height: 50rpx;">计算1/3工序误差</button>
+
+<view class = "text_2">1/3工序误差：{{error_process}}</view>
+
+<button class = "button_0" type = "primary" bindtap = "submitCalc" style = "width: 700rpx;line-height: 50rpx;">上传计算结果</button>
+
+<view class ="name">@nzc</view>
